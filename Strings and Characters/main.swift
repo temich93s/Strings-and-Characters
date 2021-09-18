@@ -84,3 +84,32 @@ for i in someString6 {
 let someCharacterArray: [Character] = ["h", "e", "l", "l", "o"]
 let someString7 = String(someCharacterArray)
 print("\n\(someString7)")
+
+
+//MARK: Конкатенация строк и символов
+print("\n//Конкатенация строк и символов")
+
+let someString8 = "hello"
+let someString9 = " world"
+var someString10 = someString8 + someString9
+print(someString10)
+
+someString10 += "🙂"
+print(someString10)
+
+someString10.append(someCharacter2)
+print(someString10)
+
+let someString11 = """
+    строка1
+    строка2
+    """
+
+let someString12 = """
+    строка3
+    """
+
+print(someString11 + someString12) //строка3 располагается на второй строке, так как после строка2 нету символа перевода строки, а оператор + ее не добовляет, что бы строка 3 была на третей строке надо добавить /n
+
+
+
