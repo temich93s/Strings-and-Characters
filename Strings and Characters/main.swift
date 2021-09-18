@@ -9,3 +9,9 @@ import Foundation
 
 print("Hello, World!")
 
+//MARK: Строковые литералы
+print("\n//Строковые литералы")
+
+let someString = "hello world"
+
+
