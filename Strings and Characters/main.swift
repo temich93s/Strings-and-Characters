@@ -68,3 +68,19 @@ print("\n//Изменчивость строк")
 var someString5 = "hello"
 someString5 += " world"
 print(someString5)
+
+
+//MARK: Работа с символами
+print("\n//Работа с символами")
+
+let someCharacter1 = "!" // по умолчанию тип String
+let someCharacter2: Character = "!" // теперь тип Character
+
+let someString6 = "hello"
+for i in someString6 {
+    print(i, terminator: " ")
+}
+
+let someCharacterArray: [Character] = ["h", "e", "l", "l", "o"]
+let someString7 = String(someCharacterArray)
+print("\n\(someString7)")
