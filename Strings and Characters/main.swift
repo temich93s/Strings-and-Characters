@@ -60,3 +60,11 @@ let someString4 = String()
 
 print("someString3.isEmpty - \(someString3.isEmpty ? true : false)")
 print("someString4.isEmpty - \(someString4.isEmpty ? true : false)")
+
+
+//MARK: Изменчивость строк
+print("\n//Изменчивость строк")
+
+var someString5 = "hello"
+someString5 += " world"
+print(someString5)
