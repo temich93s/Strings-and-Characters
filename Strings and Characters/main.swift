@@ -118,3 +118,22 @@ print("\n//Интерполяция строк")
 let numberTwo = 2
 print("\(someString10), 10 * 2 = \(numberTwo * 10)")
 
+
+//MARK: Расширяемые наборы графем
+print("\n//Расширяемые наборы графем")
+
+let eAcute: Character = "\u{E9}" // é
+let combinedEAcute: Character = "\u{65}\u{301}" // e с последующим
+print("eAcute = \\u{E9} = \(eAcute)")
+print("combinedEAcute = \\u{65}\\u{301} = \(combinedEAcute)")
+
+let precomposed: Character = "\u{D55C}"
+let decomposed: Character = "\u{1112}\u{1161}\u{11AB}"
+print("precomposed \\u{D55C}  = \(precomposed), decomposed \\u{1112}\\u{1161}\\u{11AB} = \(decomposed)")
+
+let enclosedEAcute: Character = "\u{E9}\u{20DD}"
+print("enclosedEAcute \\u{E9}\\u{20DD} = \(enclosedEAcute)")
+
+let regionalIndicatorForUS: Character = "\u{1F1FA}\u{1F1F8}"
+print("regionalIndicatorForUS \\u{1F1FA}\\u{1F1F8} = \(regionalIndicatorForUS)")
+
