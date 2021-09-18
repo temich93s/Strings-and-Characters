@@ -51,3 +51,12 @@ print("\n//Расширенные разделители строк")
 
 print(#"\t (табуляция1), \#t (табуляция2)"#)
 
+
+//MARK: Инициализация пустых строк
+print("\n//Инициализация пустых строк")
+
+let someString3 = ""
+let someString4 = String()
+
+print("someString3.isEmpty - \(someString3.isEmpty ? true : false)")
+print("someString4.isEmpty - \(someString4.isEmpty ? true : false)")
