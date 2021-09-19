@@ -273,3 +273,13 @@ for codeUnit in dogString.utf8 {
     print(codeUnit, terminator: " ")
 }
 
+
+//MARK: Отображение UTF-16
+print("\n//Отображение UTF-16")
+
+//набор значений unsigned 16-bit (UInt16), по одному для каждого байта в представлении UTF-8 строки
+print("dogString = \(dogString), dogString.count = \(dogString.count)")
+for codeUnit in dogString.utf16 {
+    print(codeUnit, terminator: " ")
+}
+
