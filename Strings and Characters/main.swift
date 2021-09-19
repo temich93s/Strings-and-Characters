@@ -260,3 +260,16 @@ for i in romeoAndJuliet {
     }
 }
 print("Количество: \"Capulet's mansion\": \(count)")
+
+
+//MARK: Отображение UTF-8
+print("\n//Отображение UTF-8")
+
+let dogString = "Dog‼🐶"
+
+//набор значений unsigned 8-bit (UInt8), по одному для каждого байта в представлении UTF-8 строки
+print("dogString = \(dogString), dogString.count = \(dogString.count)")
+for codeUnit in dogString.utf8 {
+    print(codeUnit, terminator: " ")
+}
+
