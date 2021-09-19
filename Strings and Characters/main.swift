@@ -222,3 +222,41 @@ print("caf\u{E9} == caf\u{65}\u{301}, ",someString21 == someString22)
 let someString23 = "\u{0040}"
 let someString24 = "\u{0041}"
 print("\\u{0410} = \u{0410}, \\u{0041} = \u{0041}, \u{0410} == \u{0041}", someString23 == someString24)
+
+
+//MARK: Равенство префиксов и суффиксов
+print("\n//Равенство префиксов и суффиксов")
+
+let romeoAndJuliet = [
+ "Act 1 Scene 1: Verona, A public place",
+ "Act 1 Scene 2: Capulet's mansion",
+ "Act 1 Scene 3: A room in Capulet's mansion",
+ "Act 1 Scene 4: A street outside Capulet's mansion",
+ "Act 1 Scene 5: The Great Hall in Capulet's mansion",
+ "Act 2 Scene 1: Outside Capulet's mansion",
+ "Act 2 Scene 2: Capulet's orchard",
+ "Act 2 Scene 3: Outside Friar Lawrence's cell",
+ "Act 2 Scene 4: A street in Verona",
+ "Act 2 Scene 5: Capulet's mansion",
+ "Act 2 Scene 6: Friar Lawrence's cell"
+ ]
+
+var count = 0
+
+for i in romeoAndJuliet {
+    //hasPrefix(_:) - проверка имеет ли строка определенный строковый префикс
+    if i.hasPrefix("Act 1") {
+        count += 1
+    }
+}
+print("Количество: \"Act 1\": \(count)")
+
+count = 0
+
+for i in romeoAndJuliet {
+    //hasSuffix(_:) - проверка имеет ли строка определенный строковый суффикс
+    if i.hasSuffix("Capulet's mansion") {
+        count += 1
+    }
+}
+print("Количество: \"Capulet's mansion\": \(count)")
