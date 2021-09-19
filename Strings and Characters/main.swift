@@ -170,3 +170,24 @@ print("\(greeting[index])") // 8
 for i in greeting.indices {
     print(greeting[i], terminator: " ")
 }
+
+//MARK: Добавление и удаление
+print("\n//Добавление и удаление")
+
+//insert(_:at:) - вставить символ в строку по указанному индексу
+var someString15 = "hello"
+someString15.insert("@", at: someString15.startIndex)
+print(someString15)
+
+//insert(contentsOf:at:) - вставить тсроку в другую строку по указанному индексу
+someString15.insert(contentsOf: " world", at: someString15.endIndex)
+print(someString15)
+
+//remove(at:) - удалить символ из строки по указанному индексу
+someString15 = "0123456789"
+someString15.remove(at: someString15.startIndex)
+print(someString15)
+
+//removeSubrange(_:) - удалить значения по указанному диапазону индексов
+someString15.removeSubrange(someString15.index(someString15.startIndex, offsetBy: 5)...someString15.index(someString15.startIndex, offsetBy: 7))
+print(someString15) // ( 1(startIndex) + 5(offsetBy) )...(1+7)
