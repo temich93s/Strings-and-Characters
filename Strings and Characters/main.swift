@@ -148,3 +148,25 @@ var someString14 = "cafe"
 print("значение someString14 это \(someString14) и он состоит из \(someString14.count) символов")
 someString14 += "\u{301}"
 print("значение someString14 это \(someString14) и он состоит из \(someString14.count) символов")
+
+//MARK: Индексы строки
+print("\n//Индексы строки")
+
+let greeting = "123456789"
+
+//startIndex для доступа позиции первого Character в String
+print("\(greeting[greeting.startIndex])") // 1
+
+//endIndex — это позиция после последнего символа в String.
+//index(before:) и index(after:) - доступ к индексу до и после указанного индекса
+print("\(greeting[greeting.index(before: greeting.endIndex)])") // 9
+print("\(greeting[greeting.index(after: greeting.startIndex)])") // 2
+
+// index(_:offsetBy:) - доступ к индексу, расположенного не по соседству с указанным индексом
+let index = greeting.index(greeting.startIndex, offsetBy: 7)
+print("\(greeting[index])") // 8
+
+
+for i in greeting.indices {
+    print(greeting[i], terminator: " ")
+}
