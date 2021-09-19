@@ -191,3 +191,16 @@ print(someString15)
 //removeSubrange(_:) - удалить значения по указанному диапазону индексов
 someString15.removeSubrange(someString15.index(someString15.startIndex, offsetBy: 5)...someString15.index(someString15.startIndex, offsetBy: 7))
 print(someString15) // ( 1(startIndex) + 5(offsetBy) )...(1+7)
+
+
+//MARK: Подстроки
+print("\n//Подстроки")
+
+var someString16 = "123456789"
+//.firstIndex(of: "") - возвращает индекс первого элемента совпавшего с символом
+let index1 = someString16.firstIndex(of: "6") ?? someString16.endIndex
+let someString17 = someString16[..<index1] // someString17 имеет тип Substring
+let newString = String(someString17)
+print(someString17)
+
+
