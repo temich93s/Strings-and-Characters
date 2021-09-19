@@ -123,7 +123,7 @@ print("\(someString10), 10 * 2 = \(numberTwo * 10)")
 print("\n//Расширяемые наборы графем")
 
 let eAcute: Character = "\u{E9}" // é
-let combinedEAcute: Character = "\u{65}\u{301}" // e с последующим
+let combinedEAcute: Character = "\u{65}\u{301}" // e с последующим '
 print("eAcute = \\u{E9} = \(eAcute)")
 print("combinedEAcute = \\u{65}\\u{301} = \(combinedEAcute)")
 
@@ -137,3 +137,14 @@ print("enclosedEAcute \\u{E9}\\u{20DD} = \(enclosedEAcute)")
 let regionalIndicatorForUS: Character = "\u{1F1FA}\u{1F1F8}"
 print("regionalIndicatorForUS \\u{1F1FA}\\u{1F1F8} = \(regionalIndicatorForUS)")
 
+
+//MARK: Подсчет символов
+print("\n//Подсчет символов")
+
+let someString13 = "1234567890"
+print("значение someString13 это \(someString13) и он состоит из \(someString13.count) символов")
+
+var someString14 = "cafe"
+print("значение someString14 это \(someString14) и он состоит из \(someString14.count) символов")
+someString14 += "\u{301}"
+print("значение someString14 это \(someString14) и он состоит из \(someString14.count) символов")
