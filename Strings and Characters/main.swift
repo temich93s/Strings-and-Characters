@@ -204,3 +204,21 @@ let newString = String(someString17)
 print(someString17)
 
 
+//MARK: Равенство строк и символов
+print("\n//Равенство строк и символов")
+
+let someString18 = "a12345"
+let someString19 = "a12345"
+let someString20 = "b12345"
+print(someString18 == someString19)
+print(someString18 != someString19)
+print(someString18 > someString19)
+print(someString18 < someString20)
+
+let someString21 = "caf\u{E9}"
+let someString22 = "caf\u{65}\u{301}"
+print("caf\u{E9} == caf\u{65}\u{301}, ",someString21 == someString22)
+
+let someString23 = "\u{0040}"
+let someString24 = "\u{0041}"
+print("\\u{0410} = \u{0410}, \\u{0041} = \u{0041}, \u{0410} == \u{0041}", someString23 == someString24)
