@@ -283,3 +283,16 @@ for codeUnit in dogString.utf16 {
     print(codeUnit, terminator: " ")
 }
 
+
+//MARK: Отображение скалярных величин Юникода
+print("\n//Отображение скалярных величин Юникода")
+
+print("dogString = \(dogString), dogString.count = \(dogString.count)")
+for scalar in dogString.unicodeScalars {
+    print(scalar.value, terminator: " ")
+}
+print("")
+
+for scalar in dogString.unicodeScalars {
+    print(scalar)
+}
